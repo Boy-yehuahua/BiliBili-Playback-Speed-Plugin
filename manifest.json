@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "bilibili多倍速播放",
+  "version": "1.0.0",
+  "description": "bilibili多倍速播放插件",
+  "author": "Boy-yehuahua",
+  "content_scripts": [
+    {
+      "matches": ["*://www.bilibili.com/*"],
+      "js": ["js/playRate.js"]
+    }
+  ],
+  "host_permissions": ["https://*/*"],
+  "permissions": ["scripting"],
+  "action": {
+    "default_icon": {
+      "16": "img/icon.png",
+      "32": "img/icon.png",
+      "48": "img/icon.png",
+      "64": "img/icon.png",
+      "128": "img/icon.png"
+    }
+  },
+  "icons": {
+    "16": "img/icon.png",
+    "32": "img/icon.png",
+    "48": "img/icon.png",
+    "64": "img/icon.png",
+    "128": "img/icon.png"
+  }
+}
